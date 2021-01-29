@@ -4,23 +4,24 @@
  */
 
 import Vue from 'vue'
-import DC from 'dvgis/dc-sdk/dist/dc.base.min'
-import DcCore from 'dvgis/dc-sdk/dist/dc.core.min'
-import DcPlugins from 'dvgis/dc-plugins/dist/dc.plugins.min'
-import DcUI from 'dvgis/dc-ui/dist/dc.ui.min'
-import 'dvgis/dc-sdk/dist/dc.core.min.css'
+
+import DC from '@/assets/libs/dvgis/dc-sdk/src/base'
+import DcCore from '@/assets/libs/dvgis/dc-sdk/src/core'
+import DcPlugins from '@/assets/libs/dvgis/dc-plugins/src'
+import DcUI from '@/assets/libs/dvgis/dc-ui/src'
+import '@/assets/libs/dvgis/dc-sdk/dist/dc.core.min.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
 const hub = new Vue()
-
+console.log(DC, DcCore, DcPlugins)
 class AppLoader {
   constructor() {
     Vue.config.productionTip = false
-    DC.use(DcCore)
-    DC.use(DcPlugins)
+    // DC.use(DcCore)
+    // DC.use(DcPlugins)
     Vue.use(ElementUI)
-    Vue.use(DcUI)
+    // Vue.use(DcUI)
     Vue.use({
       install(Vue) {
         Vue.prototype.$hub = hub
@@ -30,7 +31,8 @@ class AppLoader {
 
   install() {
     global.Vue = Vue
-    global.DC = DC
+    // global.DC = DC
+    // global.Cesium = DC.Namespace['cesium']
     return Promise.all([
       import('@/components'),
       import('@/loader/HttpLoader'),

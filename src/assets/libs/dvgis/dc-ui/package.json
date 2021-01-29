@@ -1,0 +1,93 @@
+{
+  "_args": [
+    [
+      "@dvgis/dc-ui@1.0.0-Beta",
+      "E:\\李润华工作数据\\开发项目\\三维gis项目\\源码\\vue-dc"
+    ]
+  ],
+  "_from": "@dvgis/dc-ui@1.0.0-Beta",
+  "_id": "@dvgis/dc-ui@1.0.0-Beta",
+  "_inBundle": false,
+  "_integrity": "sha512-rZoMalFFzNh6bQTYL1Cj659uumN3fFfeKsTpiheEx4UzjwdGyVUxcqsOr9ZJNv66Dbgtq9O3jwqfAfdfL2VVgg==",
+  "_location": "/@dvgis/dc-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@dvgis/dc-ui@1.0.0-Beta",
+    "name": "@dvgis/dc-ui",
+    "escapedName": "@dvgis%2fdc-ui",
+    "scope": "@dvgis",
+    "rawSpec": "1.0.0-Beta",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0-Beta"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@dvgis/dc-ui/-/dc-ui-1.0.0-Beta.tgz",
+  "_spec": "1.0.0-Beta",
+  "_where": "E:\\李润华工作数据\\开发项目\\三维gis项目\\源码\\vue-dc",
+  "author": {
+    "name": "Caven Chen",
+    "email": "cavencj@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/dvgis/dc-ui/issues"
+  },
+  "description": "<p> <img src=\"https://img.shields.io/badge/license-MIT-blue\"/> <img src=\"https://img.shields.io/github/package-json/v/dvgis/dc-ui?color=orange&logo=github\" /> <img src=\"https://img.shields.io/npm/dw/@dvgis/dc-ui?logo=npm\"/> </p>",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/polyfill": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-stage-2": "^7.0.0",
+    "@vue/component-compiler-utils": "^3.2.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "file-loader": "^3.0.1",
+    "prettier": "^1.16.4",
+    "rimraf": "^2.6.3",
+    "strip-pragma-loader": "^1.0.0",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
+    "vue-template-es2015-compiler": "^1.9.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-glsl-loader": "^1.0.1",
+    "webpack-obfuscator": "^1.8.0"
+  },
+  "homepage": "https://www.dvgis.cn",
+  "keywords": [
+    "3D",
+    "webgl",
+    "map",
+    "globe",
+    "dc-sdk",
+    "vue"
+  ],
+  "license": "MIT",
+  "main": "./dist/dc-ui.min.js",
+  "name": "@dvgis/dc-ui",
+  "peerDependencies": {
+    "dc-sdk": "1.9.0",
+    "vue": "^2.5.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvgis/dc-ui.git"
+  },
+  "scripts": {
+    "build": "yarn run clean && webpack --mode development",
+    "clean": "rimraf dist/",
+    "publish": "yarn run clean && webpack --mode production --env.production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0-Beta"
+}

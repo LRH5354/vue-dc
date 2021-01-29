@@ -7,7 +7,7 @@
 const path = require('path')
 
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const dvgisDist = './node_modules/@dvgis'
+const dvgisDist = './src/assets/libs/dvgis'
 
 let resolve = dir => {
   return path.resolve(__dirname, dir)
@@ -19,6 +19,11 @@ module.exports = {
   configureWebpack: {
     module: {
       unknownContextCritical: false
+    },
+    resolve: {
+      alias: {
+        '@': resolve('src')
+      }
     },
     performance: {
       hints: false

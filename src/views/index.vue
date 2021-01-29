@@ -5,7 +5,7 @@
       @on-viewer-created="viewerCreatedHandler"
     >
       <dc-base-layer
-        layer-type="google"
+        layer-type="baidu"
         :options="{ style: 'img' }"
       ></dc-base-layer>
     </dc-viewer>

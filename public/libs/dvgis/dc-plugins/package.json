@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      "@dvgis/dc-plugins@1.10.2",
+      "E:\\李润华工作数据\\开发项目\\三维gis项目\\源码\\vue-dc"
+    ]
+  ],
+  "_from": "@dvgis/dc-plugins@1.10.2",
+  "_id": "@dvgis/dc-plugins@1.10.2",
+  "_inBundle": false,
+  "_integrity": "sha512-mucTgVo+utpAtRzmVURFrzVsfbO8cKjeKLfxlW2P6gDtpJgSsuy2X2bAhsj0dEDSUUKQg4izbl6NRYWnTGbRew==",
+  "_location": "/@dvgis/dc-plugins",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@dvgis/dc-plugins@1.10.2",
+    "name": "@dvgis/dc-plugins",
+    "escapedName": "@dvgis%2fdc-plugins",
+    "scope": "@dvgis",
+    "rawSpec": "1.10.2",
+    "saveSpec": null,
+    "fetchSpec": "1.10.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@dvgis/dc-plugins/-/dc-plugins-1.10.2.tgz",
+  "_spec": "1.10.2",
+  "_where": "E:\\李润华工作数据\\开发项目\\三维gis项目\\源码\\vue-dc",
+  "author": {
+    "name": "Caven Chen",
+    "email": "cavencj@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/dvgis/dc-plugins/issues"
+  },
+  "dependencies": {
+    "heatmap.js": "^2.0.5"
+  },
+  "description": "DC-SDK plug-in library, the plug-in library includes animation, effects, textures, heatmap, clusterLayer, and Mapv",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/polyfill": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-stage-2": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "prettier": "^1.16.4",
+    "rimraf": "^2.6.3",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-glsl-loader": "^1.0.1",
+    "webpack-obfuscator": "^1.8.0"
+  },
+  "homepage": "https://www.dvgis.cn",
+  "keywords": [
+    "3D",
+    "webgl",
+    "map",
+    "globe",
+    "cesium",
+    "heatmap"
+  ],
+  "license": "Apache 2.0",
+  "main": "index.js",
+  "name": "@dvgis/dc-plugins",
+  "peerDependencies": {
+    "@dvgis/dc-sdk": ">=1.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvgis/dc-plugins.git"
+  },
+  "scripts": {
+    "build": "yarn run clean && webpack  --mode development",
+    "clean": "rimraf dist/",
+    "publish": "yarn run clean && webpack  --mode production --env.production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.10.2"
+}

@@ -5,6 +5,7 @@ yarn-error.log*
 web/
 pack/
 dist/
+src/libs/@dvgis
 # Editor directories and files
 .idea
 .vscode
